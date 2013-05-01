@@ -2,10 +2,11 @@ require 'zlib'
 require_relative 'ncd/version'
 
 module NCD
+  @@level = Zlib::BEST_COMPRESSION
   def self.distance(a, b)
-    min, max = [a, b].map{|d| Zlib::Deflate.deflate(d, 9).size }.minmax
-    cab = Zlib::Deflate.deflate(a+b, 9).size
-    (cab - min) / max.to_f
+    min, max = [a, b].map{|d| Zlib::Deflate.deflate(d, @@level).size }.minmax
+    cab = Zlib::Deflate.deflate(a+b, @@level).size
+    (cab.to_f - min.to_f) / max.to_f
   end
 end
 
