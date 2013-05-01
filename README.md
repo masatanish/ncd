@@ -1,6 +1,5 @@
-# Ncd
-
-TODO: Write a gem description
+# NCD
+Calculate Normalized Compression Distance (NCD).
 
 ## Installation
 
@@ -18,7 +17,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'ncd'
+
+    a = File.read('somefile.a')
+    b = File.read('somefile.b')
+    distance = NCD.distance(a, b)
+
+or
+    distance = a.ncd(b)
 
 ## Contributing
 
