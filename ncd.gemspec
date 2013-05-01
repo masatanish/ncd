@@ -6,11 +6,11 @@ require 'ncd/version'
 Gem::Specification.new do |spec|
   spec.name          = "ncd"
   spec.version       = Ncd::VERSION
-  spec.authors       = ["mnishida"]
-  spec.email         = ["masata_nishida@securebrain.co.jp"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["Masata Nishida"]
+  spec.email         = ["masatanish@gmail.com"]
+  spec.description   = %q{gem for calculating Normalized Compression Distance.}
+  spec.summary       = %q{gem for calculating Normalized Compression Distance.}
+  spec.homepage      = "https://github.com/masatanish/ncd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
