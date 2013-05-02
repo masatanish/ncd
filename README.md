@@ -1,5 +1,7 @@
 # NCD
-Calculate Normalized Compression Distance (NCD).
+Ruby gem for calculating Normalized Compression Distance (NCD).
+
+It's inspired by [RubyForge code snippet](http://rubyforge.org/snippet/detail.php?type=snippet&id=3).
 
 ## Installation
 
@@ -13,18 +15,18 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ncd
+  $ gem install ncd
 
 ## Usage
-
+```ruby
     require 'ncd'
 
     a = File.read('somefile.a')
     b = File.read('somefile.b')
     distance = NCD.distance(a, b)
-
-or
+    # or 
     distance = a.ncd(b)
+```
 
 ## Contributing
 
@@ -33,3 +35,4 @@ or
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
