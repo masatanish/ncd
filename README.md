@@ -15,7 +15,7 @@ And then execute:
 
 Or install it yourself as:
 
-  $ gem install ncd
+    $ gem install ncd
 
 ## Usage
 ```ruby
