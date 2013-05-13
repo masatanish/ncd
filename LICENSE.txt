@@ -1,4 +1,4 @@
-Copyright (c) 2013 mnishida
+Copyright (c) 2013 Masata NISHIDA
 
 MIT License
 
