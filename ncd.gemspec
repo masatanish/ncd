@@ -5,7 +5,7 @@ require 'ncd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ncd"
-  spec.version       = Ncd::VERSION
+  spec.version       = NCD::VERSION
   spec.authors       = ["Masata Nishida"]
   spec.email         = ["masatanish@gmail.com"]
   spec.description   = %q{gem for calculating Normalized Compression Distance.}
