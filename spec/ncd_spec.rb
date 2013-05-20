@@ -19,6 +19,27 @@ describe NCD do
     end
   end
 
+  describe '.level' do
+    subject { NCD.level }
+    it 'should eq Zlib::BEST_COMPRESSION' do
+      expect(subject).to eq Zlib::BEST_COMPRESSION
+    end
+  end
+
+  describe '.level=' do
+    let(:level_value) { 0 }
+    subject { NCD.level = level_value }
+    it { expect{ subject }.to change(NCD, :level).to(level_value) }
+    context 'when invoke NCD.distance' do
+      it 'level value should be assigned to arguments of Zlib::Defaulte.deflate method' do
+        Zlib::Deflate.should_receive(:deflate).with(kind_of(String), level_value).exactly(3).times.and_return('aaa')
+        subject
+        NCD.distance(a, b)
+      end
+      after { NCD.level = Zlib::BEST_COMPRESSION }
+    end
+  end
+
   describe 'String#ncd' do
     context 'when assigned values are same.' do
       it { expect(a.ncd(a)).to be < 0.1 }
