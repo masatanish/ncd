@@ -1,4 +1,4 @@
-# NCD
+# NCD [![Build Status](https://travis-ci.org/masatanish/ncd.png)](https://travis-ci.org/masatanish/ncd)
 Ruby gem for calculating Normalized Compression Distance (NCD).
 
 It's inspired by [RubyForge code snippet](http://rubyforge.org/snippet/detail.php?type=snippet&id=3).
