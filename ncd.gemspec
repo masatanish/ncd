@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = NCD::VERSION
   spec.authors       = ["Masata Nishida"]
   spec.email         = ["masatanish@gmail.com"]
-  spec.description   = %q{gem for calculating Normalized Compression Distance.}
-  spec.summary       = %q{gem for calculating Normalized Compression Distance.}
+  spec.description   = %q{calculating Normalized Compression Distance(NCD).}
+  spec.summary       = %q{calculating Normalized Compression Distance(NCD).}
   spec.homepage      = "https://github.com/masatanish/ncd"
   spec.license       = "MIT"
 
