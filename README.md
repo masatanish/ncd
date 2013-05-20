@@ -27,6 +27,14 @@ Or install it yourself as:
     # or 
     distance = a.ncd(b)
 ```
+### Setting compression level
+
+```ruby
+NCD.level = Zlib::Defalate::DEAULT_COMPRESSION
+```
+Valid values of level are Zlib::Deflate::NO_COMPRESSION, BEST_SPEED, BEST_COMPRESSION, DEFAULT_COMPRESSION, and an integer from 0 to 9.
+
+default compression level is Zlib::Defaulte::BEST_COMPRESSION.
 
 ## Contributing
 
