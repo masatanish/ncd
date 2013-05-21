@@ -19,13 +19,13 @@ Or install it yourself as:
 
 ## Usage
 ```ruby
-    require 'ncd'
+require 'ncd'
 
-    a = File.read('somefile.a')
-    b = File.read('somefile.b')
-    distance = NCD.distance(a, b)
-    # or 
-    distance = a.ncd(b)
+a = File.read('somefile.a')
+b = File.read('somefile.b')
+distance = NCD.distance(a, b)
+# or 
+distance = a.ncd(b)
 ```
 ### Setting compression level
 
